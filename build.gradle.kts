@@ -9,12 +9,14 @@ val javaVersion = 25
 
 repositories {
     mavenCentral()
-    maven("https://maven.hytale-modding.info/releases") {
-        name = "HytaleModdingReleases"
+    maven {
+        name = "hMReleases"
+        url = uri("https://maven.hytale-mods.dev/releases")
     }
 }
 
 dependencies {
+    compileOnly(files("D:/Users/peron/AppData/Roaming/Hytale/install/pre-release/package/game/latest/Server/HytaleServer.jar"))
     compileOnly(libs.jetbrains.annotations)
     compileOnly(libs.jspecify)
 }
@@ -27,7 +29,7 @@ hytale {
 
     // uncomment if you want to develop your mod against the pre-release version of the game.
     //
-    // updateChannel = "pre-release"
+     updateChannel = "pre-release"
 }
 
 java {
