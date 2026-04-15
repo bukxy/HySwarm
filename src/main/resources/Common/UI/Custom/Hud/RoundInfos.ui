@@ -1,0 +1,21 @@
+Group {
+    Anchor: (Top: 20, Height: 120);
+    Group #HudPanel {
+      LayoutMode: Top;
+      Label #Timer {
+        Text: "";
+        Style: (FontSize: 28, Alignment: Center);
+        Anchor: (Top: 12);
+      }
+      Label #TotalKills {
+        Text: "";
+        Style: (FontSize: 28, Alignment: Center);
+        Anchor: (Top: 50);
+      }
+      Label #StageNumber {
+        Text: "";
+        Style: (FontSize: 28, Alignment: Center);
+        Anchor: (Top: 90);
+      }
+    }
+}
