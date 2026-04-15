@@ -10,12 +10,12 @@ Group {
       Label #TotalKills {
         Text: "";
         Style: (FontSize: 28, Alignment: Center);
-        Anchor: (Top: 50);
+        Anchor: (Top: 22);
       }
       Label #StageNumber {
         Text: "";
         Style: (FontSize: 28, Alignment: Center);
-        Anchor: (Top: 90);
+        Anchor: (Top: 32);
       }
     }
 }

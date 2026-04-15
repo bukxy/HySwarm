@@ -17,11 +17,18 @@ public class RoundHud extends CustomUIHud {
 
 	@Override
 	protected void build(@NonNull UICommandBuilder uiCommandBuilder) {
+
 		uiCommandBuilder.append("Hud/RoundInfos.ui");
 
-		uiCommandBuilder.set("#Timer.TextSpans", Message.raw("Timer : " + String.valueOf(roundComponent.getRoundTimer())));
+		uiCommandBuilder.set("#Timer.TextSpans", Message.raw("Timer : " + formatTimer(roundComponent.getRoundTimer())));
 		uiCommandBuilder.set("#TotalKills.TextSpans", Message.raw("Total Kills : " + String.valueOf(roundComponent.getTotalKills())));
 		uiCommandBuilder.set("#StageNumber.TextSpans", Message.raw("Stage : " + String.valueOf(roundComponent.getStageNumber())));
 
+	}
+
+	public static String formatTimer(int totalSeconds) {
+		int minutes = totalSeconds / 60;
+		int seconds = totalSeconds % 60;
+		return String.format("%02dm %02ds", minutes, seconds);
 	}
 }
