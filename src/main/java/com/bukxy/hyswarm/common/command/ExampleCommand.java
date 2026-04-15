@@ -1,4 +1,4 @@
-package com.bukxy.hyswarm;
+package com.bukxy.hyswarm.common.command;
 
 import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.server.core.Message;
