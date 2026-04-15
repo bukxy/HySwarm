@@ -3,7 +3,7 @@ plugins {
     id("hytale-mod") version "0.+"
 }
 
-group = "com.bukxy"
+group = "bukxy"
 version = "0.1.0"
 val javaVersion = 25
 
@@ -16,7 +16,6 @@ repositories {
 }
 
 dependencies {
-    compileOnly(files("D:/Users/peron/AppData/Roaming/Hytale/install/pre-release/package/game/latest/Server/HytaleServer.jar"))
     compileOnly(libs.jetbrains.annotations)
     compileOnly(libs.jspecify)
 }
@@ -29,7 +28,7 @@ hytale {
 
     // uncomment if you want to develop your mod against the pre-release version of the game.
     //
-     updateChannel = "pre-release"
+//     updateChannel = "pre-release"
 }
 
 java {
